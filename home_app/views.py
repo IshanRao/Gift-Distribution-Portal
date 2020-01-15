@@ -21,5 +21,3 @@ def user_detail(req) :
 
 def user_successful_giftorder(req) :
     return render(req,'home_app/user_successful_giftorder.html')
-
-                        

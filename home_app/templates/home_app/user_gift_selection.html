@@ -2,127 +2,57 @@
 <html>
     <head>
       <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Ishan Rao">
         <title>
             User Page to select gift of their choice
         </title>
+        {% load static %}
+        <link rel="stylesheet" href="{%static "home_app\css\styles1.css"%}"> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
-    <body>
+
+    
+    <body  style="background-image:url({%static 'home_app/img/christmas11.jpg'%});">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{%url 'user_landing'%}">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CHOOSE GIFT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">ADD ITEM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">WISHLIST</a>
+            </li>
+          </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="{%url 'distributor_login'%}">LOG IN</a></button>
+        </div>
+      </nav>
+
+      
         <div class="container">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="Gift Item">
+                    <div class="card-body">
+                      <h5 class="card-title">Item : </h5>
+                      <p class="card-text">Description : </p>
+                      <a href="{%url 'user_successful_giftorder'%}" class="btn btn-primary">SELECT</a>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="col-md-1"></div>
             </div>

@@ -12,4 +12,3 @@ urlpatterns = [
     path('distributor_peoplelist',views.distributor_peoplelist,name='distributor_peoplelist'),
     
 ]
-    
