@@ -5,7 +5,7 @@ class Gift(models.Model) :
 
     item = models.CharField(max_length=50)
     description = models.TextField()
-    image = models.ImageField(upload_to='Gifts',blank=True)
+    
 
 class UserProfile(models.Model) :
 
